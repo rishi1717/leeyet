@@ -15,3 +15,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 app.use('/api/product', productRoute)
+
+app.listen(port, () => {
+    console.log(`Server is running on port http://localhost:${port}`)
+})
