@@ -2,6 +2,7 @@ import express from 'express'
 import cors from 'cors'
 import connect from "./models/index.js"
 import dotenv from 'dotenv'
+import productRoute from './routes/productRoute.js'
 
 dotenv.config()
 connect

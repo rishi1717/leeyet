@@ -1,9 +1,9 @@
 import { Router } from "express"
-import addProduct from "../Controllers/addProduct"
-import deleteProduct from "../Controllers/deleteProduct"
-import editProduct from "../Controllers/editProduct"
-import getProduct from "../Controllers/getProduct"
-import getProducts from "../Controllers/getProducts"
+import addProduct from "../Controllers/addProduct.js"
+import deleteProduct from "../Controllers/deleteProduct.js"
+import editProduct from "../Controllers/editProduct.js"
+import getProduct from "../Controllers/getProduct.js"
+import getProducts from "../Controllers/getProducts.js"
 
 const router = Router()
 
@@ -16,3 +16,5 @@ router.get('/:id',getProduct)
 router.put('/:id',editProduct)
 
 router.delete('/:id',deleteProduct)
+
+export default router
